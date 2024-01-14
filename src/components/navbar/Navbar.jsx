@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
-import { FaAlignCenter } from "react-icons/fa6";
+import { FaAlignJustify } from "react-icons/fa6";
 import Sidebar from '../sidebar/Sidebar';
 
 function Navbar() {
@@ -24,7 +24,7 @@ function Navbar() {
         {/* <li className='listitem'><a href='#'>Contact</a></li> */}
     </ul>
     </div>
-    <div><button onClick={()=>{settoggle(!toggle)}} className='toggle-button'><FaAlignCenter className='toggle-button-icon'/></button></div>
+    <div><button onClick={()=>{settoggle(!toggle)}} className='toggle-button'><FaAlignJustify  className='toggle-button-icon'/></button></div>
     {
         toggle &&<Sidebar toggle={toggle} settoggle={settoggle}/>
     }

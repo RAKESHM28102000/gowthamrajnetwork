@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Team.scss';
 const Team = () => {
+  const [open,setopen]=useState(false);
   const buttons=['Design','Content','Finance','Human Resource','Projects','Web development','Design','Content','Finance','Human Resource','Projects','Web development']
   return (
     <div className='team'>
@@ -10,11 +11,10 @@ const Team = () => {
         <div className='buttons-parent'>{
           buttons.map((item,index)=>{
             return(
-              <button key={index} className='button-in-team'>{item}</button>
+              <button key={index} className='button-in-team' onClick={()=>{setopen(!open)}}>{item}</button>
             )
           })
         }</div>
-
       </div>
     </div>
   )

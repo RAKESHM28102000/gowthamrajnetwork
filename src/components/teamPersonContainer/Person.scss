@@ -1,0 +1,29 @@
+.person{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    margin:auto;
+    border-radius:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index:3000;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    .person-child{
+        width:400px !important;
+        height:500px !important;
+    }
+    .first-box{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;    
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+       
+
+    }
+}

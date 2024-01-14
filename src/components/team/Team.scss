@@ -1,10 +1,11 @@
 .team{
    min-height:120vh;
+   position: relative;
 .team-sub{
         display:flex;
         flex-direction: column;
     .team-title{
-            font-family:Arial, Helvetica, sans-serif;
+            font-family:monospace;
             font-size:80px;
             margin-top:10px;
             background:-webkit-linear-gradient(#ffffff, #cecece);

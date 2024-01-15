@@ -1,6 +1,19 @@
 import React from 'react'
 import "./Sponser.scss";
 import SponserCard from './SponserCard';
+import { motion } from "framer-motion";
+const textVariants = {
+  initial: {
+    y:200,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },}}
 function Sponser() {
     const sponser=[{title:"TITLE SPONSORS",quote:"1 crore",count:"3"},
     {title:"CO SPONSORS",quote:"75 LAKHS",count:"4"},
@@ -15,16 +28,16 @@ quote:"3 TO 4 LAKHS",count:"3"},
 quote:"1 LAKH",count:"4"},
 ]
   return (
-    <div className='sponser-parent'>
+    <motion.div className='sponser-parent'>
     <div><h1 className='sponser-title'>
     SPONSORS
     </h1></div>
-    <div className='sponser'>
+    <motion.div className='sponser'>
       {sponser.map((item,index)=>{
         return <SponserCard key={index} sponserTitle={item.title} sponsershipQuote={item.quote} sponsersCount={item.count}/>
       })}    
-    </div>
-    </div>
+    </motion.div>
+    </motion.div>
   )
 }
 

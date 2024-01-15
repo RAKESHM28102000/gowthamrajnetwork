@@ -4,7 +4,6 @@
     align-items: center;
     flex-direction: column;
     .sponser-title{
-        font-family:monospace;
         font-size:80px;
         margin-top:10px;
         background:-webkit-linear-gradient(#ffffff, #cecece);
@@ -22,7 +21,6 @@
     justify-content:start;
     align-items: center;
     flex-wrap: wrap;
-    margin-left:40px;
     background-color:transparent;
     width:100%;
     height:100%;
@@ -41,12 +39,12 @@
     align-items: center;
     border:2px solid black;
     background-color: #FA8BFF;
-    margin-bottom:20px;
-background-image: linear-gradient(45deg, #f987ff 0%, #8eacff 52%, #a2ffca 90%);
+    background-color: #444425;
+    background-image: linear-gradient(43deg, #4c4012 0%, #242424 46%, #000000 100%);
+    margin:40px auto;
     .sponser-heading{
-        color:rgb(255, 75, 156);
+        color:gold;
         padding: 5px;
-        font-family: helvetica;
         font-weight: bold;
         text-transform: uppercase;
         

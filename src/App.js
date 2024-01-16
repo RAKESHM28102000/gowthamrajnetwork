@@ -2,12 +2,12 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import About from './components/about/About';
-import Footer from './components/footer/Footer';
 
 import React, { useState, useEffect } from 'react';
 import Preloader from './components/preloader/Preloader';
 import Team from './components/team/Team';
 import Sponser from './components/sponser/Sponser';
+import SponserPage from './components/sponser/SponserPage';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -32,7 +32,8 @@ const App = () => {
  </section>
  <section id='about'><About/></section>
  <section id='team'><Team/></section>
- <section id='team'><Sponser/></section>
+ <section><Sponser/></section>
+ <section><SponserPage/></section>
  </div>)}
     </div>
   );

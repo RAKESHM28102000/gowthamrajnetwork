@@ -7,8 +7,7 @@ import React, { useState, useEffect } from 'react';
 import Preloader from './components/preloader/Preloader';
 import Team from './components/team/Team';
 import Sponser from './components/sponser/Sponser';
-import SponserPage from './components/sponser/SponserPage';
-import TeamCard from './components/teamcard/TeamCard';
+import SponserPage from './components/sponserPage/SponserPage';
 
 const App = () => {
   const [loading, setLoading] = useState(true);

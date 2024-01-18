@@ -7,7 +7,7 @@
     .sponser-title{
         font-size:80px;
         margin-top:10px;
-        background:-webkit-linear-gradient(#ffffff, #cecece);
+        background:-webkit-linear-gradient(#ffffff, #ffe62d);
         -webkit-background-clip:text;
         -webkit-text-fill-color:transparent;
         @media (max-width:768px){
@@ -30,10 +30,17 @@
 }
 .sponser-card{
     min-width:300px;
-    min-height:250px;
+    min-height:200px;
     background-color: white;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 10px rgb(255, 252, 61), 0 0 20px   rgb(255, 252, 61),
+    0 0 30px rgb(255, 252, 61), 0 0 40px   rgb(255, 252, 61);
+  transition: box-shadow 0.3s ease-in-out;
+  &:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7),
+      0 0 45px rgba(255, 255, 255, 0.7), 0 0 60px rgba(255, 255, 255, 0.7);
+  }
     border-radius:20px;
     display: flex;
     justify-content:center;

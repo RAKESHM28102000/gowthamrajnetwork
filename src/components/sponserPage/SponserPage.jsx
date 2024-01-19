@@ -4,7 +4,7 @@ import React from 'react'
 import TeamCard from '../teamcard/TeamCard';
 
 const SponserPage = () => {
-  return (
+  return (<section>
     <div className='sponserPage-parent'>
        <div>
        <h1 className='sponser-title'>
@@ -19,17 +19,13 @@ const SponserPage = () => {
         </p>
        </div>
        <div className='sponser-page-card-parent'>
-       {/* <SponserPageCard/> */}
-       {/* <SponserPageCard/> */}
-       {/* <SponserPageCard/> */}
-       {/* <SponserPageCard/> */}
        <TeamCard imgSrc='./images/4.jpg'/>
        <TeamCard  imgSrc='./images/3.jpg'/>
        <TeamCard imgSrc='./images/2.jpg'/>
        <TeamCard  imgSrc='./images/1.jpg'/>
        </div>
        </div>
-       )
+       </section> )
 }
 
 export default SponserPage;

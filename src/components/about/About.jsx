@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.scss';
 import { motion } from "framer-motion";
+import Navbar from '../navbar/Navbar';
 const textVariants = {
   initial: {
     x:-500,
@@ -24,7 +25,7 @@ const textVariants = {
   },
 };
 const About = () => {
-  return (
+  return (<section id='about'>
     <motion.div className='about' variants={textVariants}
     initial="initial"
     animate="animate">
@@ -43,7 +44,7 @@ const About = () => {
 <div className='about-p'><p>We offering courses created by working professionals in well-known companies and experts in their fields so that we ensure the quality of the courses.We are providing the professional certificates after completing the courses.We are providing coaching and guidance to the learners both in online and offline platform.We are also conducting different sessions for helping them in various aspects like placement training, skill development in various technologies and so on.</p> </div>
 </div>
     </motion.div>
-  )
+    </section> )
 }
 
 export default About

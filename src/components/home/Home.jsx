@@ -24,37 +24,6 @@ const textVariants = {
     },
   },
 };
-const imgVariants = {
-  initial: {
-    x:200,
-    y:100,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    y:10,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.1,
-    },
-  },
-}
-const img1Variants = {
-  initial: {
-    y:100,
-    opacity: 0,
-  },
-  animate: {
-    y:0,
-    opacity: 1,
-    transition: {
-      repeat: Infinity,
-      repeatType:"mirror",
-      duration:3,
-    },
-  },
-}
 const sliderVariants = {
   initial: {
     x:0,
@@ -70,8 +39,8 @@ const sliderVariants = {
 };
 
 const Home = () => {
-  return (
-    <div className="hero">
+  return (<section className="hero">
+    <div>
       <div className="wrapper">
         <motion.div
           className="textContainer"
@@ -97,16 +66,6 @@ const Home = () => {
           />
         </motion.div>
       </div>
-  
-      {/* <motion.div  */}
-          {/* // className="imageContainer"  */}
-          {/* // variants={imgVariants} */}
-          {/* // initial="initial" */}
-          {/* // animate="animate" */}
-          {/* // > */}
-        {/* {/* <motion.img variants={img1Variants}  src="./images/LOGO .png" alt="logo" /> */} 
-      {/* </motion.div> */}
-
       <motion.div
         className="slidingTextContainer"
         variants={sliderVariants}
@@ -117,7 +76,7 @@ const Home = () => {
       </motion.div>
      
     </div>
-  );
+</section>  );
 };
 
 export default Home;

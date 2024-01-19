@@ -2,6 +2,7 @@ import React from 'react'
 import "./Sponser.scss";
 import SponserCard from './SponserCard';
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 const textVariants = {
   initial: {
     y:200,
@@ -27,18 +28,18 @@ quote:"3 TO 4 LAKHS",count:"3"},
 {title:"SILVER SPONSOR",
 quote:"1 LAKH",count:"4"},
 ]
-  return (
+  return (<section>
     <motion.div className='sponser-parent'>
     <div><h1 className='sponser-title'>
     SPONSORS
     </h1></div>
     <motion.div className='sponser'>
       {sponser.map((item,index)=>{
-        return <SponserCard key={index} sponserTitle={item.title} sponsershipQuote={item.quote} sponsersCount={item.count}/>
+        return <Link to="/sponserpage" className='link'><SponserCard key={index} sponserTitle={item.title} sponsershipQuote={item.quote} sponsersCount={item.count}/></Link>
       })}    
     </motion.div>
     </motion.div>
-  )
+    </section> )
 }
 
 export default Sponser;

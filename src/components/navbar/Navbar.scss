@@ -5,6 +5,10 @@
     min-height:100px;
     max-width:2560px;
     background-image: linear-gradient(to right, #434343 0%, black 100%);
+    position:sticky;
+    top:0;
+    left:0;
+    width:100%;
     .navbar-title{
         display:flex;
         justify-content:space-around;
@@ -35,18 +39,19 @@
         list-style: none;
         font-size:13px;
         color:rgb(255, 255, 255);
-        a{
-            text-decoration: none;
+        text-decoration: none;
+        color:inherit;
             background: -webkit-linear-gradient(#000000, #eef11b);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             padding:5px;
+        cursor: pointer;
             &:hover{
                 text-decoration: underline rgb(255, 255, 255) 2px;
                 background-color:white;
                 color:rgb(0, 0, 0);
          
-            }
+            
         }
 
       }

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.scss';
 import { FaAlignJustify } from "react-icons/fa6";
 import Sidebar from '../sidebar/Sidebar';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [toggle,settoggle]=useState(false);
@@ -11,10 +12,10 @@ function Navbar() {
     <div className='navbar'>
     <div className='navbar-title'><img className='logo' src='./images/LOGO .png' alt='log' width='40px' height='40px'/><h1>GR NETWORK</h1></div>
     <div><ul className='list'>
-       {items.map((item,index)=>{
-        return(
-        <li className='listitem' key={index}><a href='#'>{item}</a></li>)
-       })}
+        <li className='listitem'><Link to="/">Home</Link></li>
+        <li className='listitem'><Link to="/about">About</Link></li>
+        <li className='listitem'><Link to="/sponsers">Sponsers</Link></li>
+        <li className='listitem'><Link to="/sponserpage">Sponser Page</Link></li>
         {/* <li className='listitem'><a href='#'>Home</a></li> */}
         {/* <li className='listitem'><a href='#'>About</a></li> */}
         {/* <li className='listitem'><a href='#'>Sponsors</a></li> */}

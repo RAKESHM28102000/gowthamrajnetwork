@@ -15,7 +15,7 @@ function Navbar() {
         <li className='listitem'><Link to="/">Home</Link></li>
         <li className='listitem'><Link to="/about">About</Link></li>
         <li className='listitem'><Link to="/sponsers">Sponsers</Link></li>
-        <li className='listitem'><Link to="/sponserpage">Sponser Page</Link></li>
+        <li className='listitem'><Link to="/sponserpage/sponsertype">Sponser Page</Link></li>
         {/* <li className='listitem'><a href='#'>Home</a></li> */}
         {/* <li className='listitem'><a href='#'>About</a></li> */}
         {/* <li className='listitem'><a href='#'>Sponsors</a></li> */}
